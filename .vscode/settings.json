@@ -1,0 +1,25 @@
+{
+  // 1. Отключаем инструменты, которые могут конфликтовать
+  "eslint.enable": false,
+  "prettier.enable": false,
+  "editor.formatOnSave": true,
+
+  // 2. Назначаем Biome главным по проекту
+  "editor.defaultFormatter": "biomejs.biome",
+
+  // 3. Автоматизация при сохранении
+  "editor.codeActionsOnSave": {
+    "source.fixAll.biome": "explicit",
+    "source.organizeImports.biome": "explicit"
+  },
+
+  // 4. Специфичные настройки для языков вашего стека (React/Next.js/SCSS)
+  "[javascript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[javascriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescript]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[typescriptreact]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[json]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[jsonc]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[css]": { "editor.defaultFormatter": "biomejs.biome" },
+  "[scss]": { "editor.defaultFormatter": "biomejs.biome" }
+}
