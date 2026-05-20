@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { Header } from "@/components/shared/Header";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,6 +26,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body>
+        <Header />
         <main className="min-h-full">{children}</main>
       </body>
     </html>
