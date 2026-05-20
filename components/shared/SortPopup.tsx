@@ -37,8 +37,8 @@ export const SortPopup: React.FC<Props> = ({ className }) => {
         </button>
       </PopoverTrigger>
 
-      <PopoverContent className="w-[240px] p-1">
-        <ul className="flex flex-col gap-0.5">
+      <PopoverContent className="w-[240px]">
+        <ul className="flex flex-col">
           {sortOptions.map((item) => (
             <li
               key={item.id}

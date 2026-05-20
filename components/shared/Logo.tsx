@@ -11,9 +11,7 @@ export const Logo: React.FC<Props> = () => {
       <Image src="/logo.png" alt="Home" width={35} height={35} />
       <div>
         <h2 className="text-2xl uppercase font-bold">next pizza</h2>
-        <p className="text-sm text-gray-400 leading-3">
-          It couldn't be more delicious.
-        </p>
+        <p className="text-sm text-gray-400 leading-3">Unbeatably delicious!</p>
       </div>
     </div>
   );

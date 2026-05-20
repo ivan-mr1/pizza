@@ -1,4 +1,4 @@
-import { Container, Title, TopBar } from "@/components/shared";
+import { Container, Filters, Title, TopBar } from "@/components/shared";
 
 export default function Home() {
   return (
@@ -7,7 +7,15 @@ export default function Home() {
         <Title text="All Products" size="lg" className="font-extrabold" />
       </Container>
       <TopBar />
-      <div style={{ height: "1500px" }}></div>
+      <Container className="mt-10 pb-14">
+        <div className="flex gap=[60px]">
+          <div className="w-[250px]">
+            <Filters />
+          </div>
+          {/* product-list */}
+          <div className="flex flex-col gap-16">product list</div>
+        </div>
+      </Container>
     </>
   );
 }
