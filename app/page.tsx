@@ -1,4 +1,10 @@
-import { Container, Filters, Title, TopBar } from "@/components/shared";
+import {
+  Container,
+  Filters,
+  ProductCard,
+  Title,
+  TopBar,
+} from "@/components/shared";
 
 export default function Home() {
   return (
@@ -13,7 +19,62 @@ export default function Home() {
             <Filters />
           </div>
           {/* product-list */}
-          <div className="flex flex-col gap-16">product list</div>
+          <div className="flex flex-col gap-16">
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+            <ProductCard
+              id={0}
+              name="margarita"
+              price={12}
+              imageUrl={"/assets/images/products/pizza1.avif"}
+            />
+          </div>
         </div>
       </Container>
     </>
