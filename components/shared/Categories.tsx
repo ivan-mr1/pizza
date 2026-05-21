@@ -26,7 +26,7 @@ export const Categories: React.FC<Props> = ({ className }) => {
         <Link
           key={name}
           className={cn(
-            "flex items-center font-bold h-11 rounded-2xl px-5",
+            "flex items-center font-bold h-11 rounded-2xl px-5 transition-all select-none",
             activeIndex === i &&
               "bg-white shadow-md shadow-gray-200 text-primary",
           )}

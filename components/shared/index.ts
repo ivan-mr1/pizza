@@ -1,7 +1,12 @@
 export { Categories } from "@/components/shared/Categories";
+export { CheckboxFiltersGroup } from "@/components/shared/CheckboxFiltersGroup";
 export { Container } from "@/components/shared/Container";
+export { FilterCheckbox } from "@/components/shared/FilterCheckbox";
+export { Filters } from "@/components/shared/Filters";
 export { Header } from "@/components/shared/Header";
 export { Logo } from "@/components/shared/Logo";
+export { ProductCard } from "@/components/shared/ProductCard";
+export { ProductsGroupList } from "@/components/shared/ProductsGroupList";
 export { SortPopup } from "@/components/shared/SortPopup";
 export { Title } from "@/components/shared/Title";
 export { TopBar } from "@/components/shared/TopBar";

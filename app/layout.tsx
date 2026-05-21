@@ -20,12 +20,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable}`}
-      suppressHydrationWarning
-    >
-      <body>
+    <html lang="en" className={`${geistSans.variable}`}>
+      <body suppressHydrationWarning>
         <Header />
         <main className="min-h-full">{children}</main>
       </body>
