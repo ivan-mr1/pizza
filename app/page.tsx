@@ -1,7 +1,7 @@
 import {
   Container,
   Filters,
-  ProductCard,
+  ProductsGroupList,
   Title,
   TopBar,
 } from "@/components/shared";
@@ -14,65 +14,65 @@ export default function Home() {
       </Container>
       <TopBar />
       <Container className="mt-10 pb-14">
-        <div className="flex gap=[60px]">
-          <div className="w-[250px]">
+        <div className="flex gap-10">
+          <div className="w-[480px]">
             <Filters />
           </div>
-          {/* product-list */}
           <div className="flex flex-col gap-16">
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
-            />
-            <ProductCard
-              id={0}
-              name="margarita"
-              price={12}
-              imageUrl={"/assets/images/products/pizza1.avif"}
+            <ProductsGroupList
+              title="Pizzas"
+              items={[
+                {
+                  id: 1,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 2,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 3,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 4,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 5,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 6,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+                {
+                  id: 7,
+                  name: "Margarita",
+                  imageUrl: "/assets/images/products/pizza1.avif",
+                  price: 15,
+                  items: [{ price: 15 }],
+                },
+              ]}
+              categoryId={1}
             />
           </div>
         </div>
